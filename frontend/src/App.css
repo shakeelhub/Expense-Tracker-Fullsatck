@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main{
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+h1 span{
+  font-size: 1.3rem;
+  vertical-align: top;
+  margin-left: -6px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+form{
+  margin-top: 20px;
+}
+
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+form input[type="datetime-local"]{
+  color: #777;
+  font-size: .7rem;
+}
+
+form div.basic{
+  display: flex;
+  gap: 9px;
+  margin-bottom: 5px;
+}
+
+form button{
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #ddd;
+  transition: .4s;
+}
+
+form button:hover{
+  background-color: black;
+  color: #fff;
+}
+
+div.transactions{
+  margin-top: 15px;
+}
+
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-top: 1px solid #30313d;
+  border-bottom: 1px solid gainsboro;
+}
+
+div.transaction div.name{
+  font-size: 1.7rem;
+}
+
+div.transaction:first-child{
+  border-top: 0;
+}
+
+div.transaction div.description{
+  font-size: 1.1rem;
+  color: #888;
+}
+
+div.right{
+  text-align: right;
+}
+
+.price.red {
+  font-size: 1.7rem;
+  color: red; 
+}
+
+.price.green {
+  font-size: 1.7rem;
+  color: green; 
+}
+
+div.transaction div.datetime{
+  font-size: .7rem;
+  color: #888;
+}
+
+.clear-button{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 25px;
+}
+
+.clear{
+  padding-top: 10px;
+  background-color:  #f34d4d ; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+  border-radius: 5px;
+
+}
+
+.clear:hover {
+  background-color: #f34d4d; 
+}
+
+.no-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading{
+  font-size: 35px;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
