@@ -9,7 +9,7 @@ const Expense = () => {
 
     useEffect(() => {
         const fetchTransactions = async () => {
-            const API_URL = "http://localhost:3000/api" + "/transactions";
+            const API_URL = "http://localhost:6200/api" + "/transactions";
             const response = await fetch(API_URL);
             const json = await response.json();
             setTransactions(json);
@@ -20,7 +20,7 @@ const Expense = () => {
 
     async function addNewTransaction(e) {
         e.preventDefault();
-        const API_URL = "http://localhost:3000/api" + "/transaction";
+        const API_URL = "http://localhost:6200/api" + "/transaction";
         const price = name.split(' ')[0];
 
         fetch(API_URL, {
